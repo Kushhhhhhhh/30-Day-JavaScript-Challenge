@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Chat Application</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Login Screen -->
+        <div id="login-container" class="login-container">
+            <input id="usernameInput" type="text" placeholder="Enter your username" />
+            <button id="joinButton" type="button">Join Chat</button>
+        </div>
+
+        <!-- Chat Container -->
+        <div id="chat-container" class="chat-container" style="display: none;">
+            <div id="chat-window" class="chat-window">
+                <!-- Messages will be appended here -->
+            </div>
+            <div class="input-area">
+                <input id="messageInput" type="text" placeholder="Type your message..." />
+                <button id="sendButton" type="button">Send</button>
+            </div>
+            <div class="room-management">
+                <input id="roomInput" type="text" placeholder="Enter room name" />
+                <button id="createRoomButton" type="button">Create Room</button>
+                <button id="joinRoomButton" type="button">Join Room</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Created by Kush❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
