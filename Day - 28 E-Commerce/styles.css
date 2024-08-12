@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Product Listing */
+.product-listing {
+    width: 70%;
+}
+
+.product-listing h2 {
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: #333 0px 05px 5px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Shopping Cart */
+.shopping-cart {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item p {
+    margin: 0;
+    flex: 1;
+}
+
+.cart-item button {
+    background-color: #0a032c; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cart-item button.increase {
+    background-color: #28a745; /* Green for increase */
+}
+
+.cart-item button.decrease {
+    background-color: #dc3545; /* Red for decrease */
+}
+
+.cart-item button.remove {
+    background-color: #dc3545; /* Red for remove */
+}
+
+.cart-item button:hover {
+    background-color: #333;
+}
+
+.cart-item button.increase:hover {
+    background-color: #218838;
+}
+
+.cart-item button.decrease:hover {
+    background-color: #c82333;
+}
+
+.cart-item button.remove:hover {
+    background-color: #c82333;
+}
+
+.cart-item button:active {
+    background-color: #000811;
+    transform: scale(0.95);
+}
+
+/* Checkout Form */
+.checkout-form {
+    border-top: 2px solid #333;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form.hidden {
+    display: none;
+}
+
+.checkout-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.checkout-form label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+}
+
+.checkout-form button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

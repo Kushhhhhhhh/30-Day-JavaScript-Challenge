@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "price": 199.99,
+        "description": "This is the description for Product 1. It is a high-quality item with excellent features.",
+        "imageURL": "./photos/product1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Robot Toy",
+        "price": 79.99,
+        "description": "This is the description for Product 2. It offers great value and durability.",
+        "imageURL": "./photos/product2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Alien Statue",
+        "price": 39.99,
+        "description": "This is the description for Product 3. A popular choice among customers for its functionality.",
+        "imageURL": "./photos/product3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Bird Statue",
+        "price": 49.99,
+        "description": "This is the description for Product 4. Known for its premium quality and sleek design.",
+        "imageURL": "./photos/product4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Skull Poster",
+        "price": 19.99,
+        "description": "This is the description for Product 5. It combines style and performance at an affordable price.",
+        "imageURL": "./photos/product5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Money Sticker",
+        "price": 19.99,
+        "description": "This is the description for Product 6. Ideal for those seeking top-notch features and reliability.",
+        "imageURL": "./photos/product6.jpg"
+    }
+]
