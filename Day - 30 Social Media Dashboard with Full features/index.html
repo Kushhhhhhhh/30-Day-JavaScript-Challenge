@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Component -->
+        <aside class="sidebar">
+            <!-- Include the sidebar.html content here -->
+            <div class="profile-container">
+                <h1>User Profile</h1>
+                <div class="profile-info">
+                    <img src="photos/pfp.jpg" alt="Profile Picture" class="profile-pic" id="profilePic">
+                    <input type="file" id="uploadPic" accept="image/*">
+                    <button id="editProfileBtn">Edit Profile</button>
+                    <button id="saveProfileBtn" style="display: none;">Save Profile</button>
+                    <button id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Dashboard Component -->
+        <main class="main-content">
+            <!-- Include the dashboard.html content here -->
+            <header>
+                Social Media Dashboard
+            </header>
+            <div class="dashboard">
+
+                <section class="new-post">
+                    <h2>Create a New Post</h2>
+                    <form id="postForm">
+                        <div class="form-group">
+                            <textarea name="postText" id="postText" rows="4" placeholder="What's on your mind?" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="postImage">Upload Image</label>
+                            <input type="file" id="postImage" name="postImage" accept="image/*">
+                        </div>
+                        <button type="submit">Post</button>
+                    </form>
+                </section>
+        
+                <section class="posts-container">
+                    <h2>Posts</h2>
+                    <!-- Posts will be dynamically inserted here by JavaScript -->
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
